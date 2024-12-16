@@ -2,7 +2,7 @@
 
 body {
     margin: 0;
-    font-family: "Inter", sans-serif; /* Use sans-serif for modern font rendering */
+    font-family: "Inter", sans-serif;
 }
 
 .navbar {
@@ -35,26 +35,26 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    margin-right: 10px; /* Increased space between image and name */
+    margin-right: 10px;
 }
 
 .menu-items {
     display: flex;
-    gap: 3rem; /* Reduced gap for better spacing */
+    gap: 3rem;
     flex-grow: 1;
     justify-content: center;
 }
 
 .menu-items > li > a {
     text-decoration: none;
-    color: #333; /* Set color for links */
+    color: #333;
     font-size: 1.1rem;
     padding: 10px;
     transition: color 0.3s;
 }
 
 .menu-items > li > a:hover {
-    color: #8f8376; /* Change color on hover */
+    color: #8f8376;
 }
 
 .portfolio-container {
@@ -64,32 +64,32 @@ body {
     gap: 30px;
     padding: 20px;
     text-align: center;
-    flex-wrap: wrap; /* Ensures responsiveness */
+    flex-wrap: wrap;
 }
 
 .portfolio-container img {
-    width: 100%; /* Ensures image scales well on different screen sizes */
-    max-width: 600px; /* Maintains max width for larger screens */
+    width: 100%;
+    max-width: 600px;
     height: auto;
     border-radius: 15px;
 }
 
 .portfolio-container section {
     max-width: 600px;
-    text-align: left; /* Better alignment for text */
+    text-align: left;
 }
 
 .portfolio-title {
     font-size: 2rem;
     margin: 0 0 15px;
-    color: #333; /* Ensures text color matches design */
+    color: #333;
 }
 
 .portfolio-description {
     font-size: 1.2rem;
     margin: 0;
     line-height: 1.6;
-    color: #555; /* Slightly muted text for readability */
+    color: #555;
 }
 
 /* About Section Header */
@@ -109,16 +109,16 @@ body {
 .about-section {
     max-width: 800px;
     padding: 20px;
-    margin: 20px auto; /* Center horizontally */
+    margin: 20px auto;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     line-height: 1.6;
-    display: flex; /* Make it a flex container */
-    flex-direction: column; /* Stack children vertically */
-    justify-content: center; /* Vertically center content */
-    align-items: center; /* Horizontally center content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-section p {
@@ -126,6 +126,7 @@ body {
     color: #555;
     margin: 0;
 }
+
 .contact-section {
     margin: 20px auto;
     padding: 20px;
@@ -161,4 +162,84 @@ body {
 
 .fab, .fas {
     font-size: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-items {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 20px;
+    }
+
+    .portfolio-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .portfolio-container img {
+        max-width: 100%;
+    }
+
+    .portfolio-title {
+        font-size: 1.8rem;
+    }
+
+    .portfolio-description {
+        font-size: 1.1rem;
+    }
+
+    .about-header h1 {
+        font-size: 2rem;
+    }
+
+    .about-section {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .contact-list a {
+        font-size: 16px;
+    }
+}
+
+/* Extra small screens (mobile) */
+@media (max-width: 480px) {
+    .my-pf-name {
+        font-size: 20px;
+    }
+
+    .my-pf img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .menu-items > li > a {
+        font-size: 1rem;
+    }
+
+    .portfolio-title {
+        font-size: 1.6rem;
+    }
+
+    .portfolio-description {
+        font-size: 1rem;
+    }
+
+    .about-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .about-section {
+        padding: 10px;
+    }
+
+    .contact-list a {
+        font-size: 14px;
+    }
 }
